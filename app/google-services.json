@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "31301865529",
+    "firebase_url": "https://pleasemom-4f986.firebaseio.com",
+    "project_id": "pleasemom-4f986",
+    "storage_bucket": "pleasemom-4f986.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31301865529:android:618f4a2cc9a66c17",
+        "android_client_info": {
+          "package_name": "com.mom.project.pleasemom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "31301865529-nsj8neoj0tb6m6lk9ddn8p78mf886vog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [{ "current_key": "AIzaSyCLwSOud_OYqBJyuqA_ykw995CXzGPrOEY"}],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

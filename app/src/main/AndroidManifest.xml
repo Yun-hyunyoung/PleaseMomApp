@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mom.project.pleasemom">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_intro"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.WelcomeActivity">
+        </activity>
+        <activity
+            android:name=".activity.IntroActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.MyPageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.CheckTokenActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.ManageAccountActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.ChangePasswdActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.PhoneAuthActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.PhoneAuthNextActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.BoardRetrieveActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.BoardMediateActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.RegistActivityOne"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.RegistActivityTwo"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.ReviewRetrieveActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.MediateRetrieveActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.FindAirportActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.FindCountryActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.BoardWriteActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.WriteAirportActivityDrparture"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.WriteAirportActivityArrival"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <service android:name="com.mom.project.pleasemom.RosaFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.mom.project.pleasemom.RosaFirebaseInstanceIDService">
+            <intent-filter>
+            <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+        </intent-filter>
+
+        </service>
+
+        <receiver android:name=".receiver.MessageReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

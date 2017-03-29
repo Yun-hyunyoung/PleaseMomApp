@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20d2bb"
+    android:onClick="relativeOnClick">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="32dp"
+        android:id="@+id/linearLayout7">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@drawable/ic_noti"
+                android:layout_marginBottom="8dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:src="@drawable/ic_close"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="closeLogin"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="로그인"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:id="@+id/linearLayout8"
+        android:layout_below="@+id/linearLayout7"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="이메일"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textView2"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:textColor="#FFFFFF"
+            android:background="@null"
+            android:id="@+id/txt_login_email"
+            android:textCursorDrawable="@null">
+            <requestFocus />
+        </EditText>
+
+        <View
+            android:id="@+id/UnderLine1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:id="@+id/linearLayout9"
+        android:layout_below="@+id/linearLayout8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="비밀번호"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textView16"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:textColor="#FFFFFF"
+            android:background="@null"
+            android:id="@+id/txt_login_passwd"
+            android:textCursorDrawable="@null">
+            <requestFocus />
+        </EditText>
+
+        <View
+            android:id="@+id/UnderLine2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp">
+
+        <Button
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            android:id="@+id/btn_login"
+            android:onClick="login"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_style"
+            android:layout_weight="0.5" />
+
+        <Button
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:id="@+id/btn_regist"
+            android:onClick="regist"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_style"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+</RelativeLayout>

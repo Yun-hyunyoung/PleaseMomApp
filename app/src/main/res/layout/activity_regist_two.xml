@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20d2bb"
+    android:onClick="relativeOnClick">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="회원가입"
+                android:id="@+id/txtLabelRegistTitle"
+                android:textColor="#FFFFFF"
+                android:padding="5dp"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView4"
+                android:src="@drawable/ic_back"
+                android:layout_alignTop="@+id/txtLabelRegistTitle"
+                android:layout_alignParentEnd="true"
+                android:onClick="back"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="이름과 생년월일만 입력하면 회원가입이 완료됩니다."
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textView9"
+            android:textAlignment="center"
+            android:layout_marginBottom="48dp"
+            android:layout_marginTop="48dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="이름"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/txtLabelRegistName"
+                android:textAlignment="center"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:textColor="#FFFFFF"
+                android:background="@null"
+                android:id="@+id/txtRegistName"
+                android:textCursorDrawable="@null">
+                <requestFocus />
+            </EditText>
+
+            <View
+                android:id="@+id/UnderLine5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/editText1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="생년월일"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/txtLabelRegistBirth"
+                android:textAlignment="center"
+                android:layout_marginBottom="16dp" />
+
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/registDatePicker"
+                android:calendarViewShown="false"
+                android:spinnersShown="true"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가입하기"
+            android:textColor="#FFFFFF"
+            android:id="@+id/btnRegist"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_style"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20d2bb"
+    android:onClick="relativeOnClick">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="회원가입"
+                android:id="@+id/txtLabelRegistTitle"
+                android:textColor="#FFFFFF"
+                android:padding="5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3"
+                android:src="@drawable/ic_back"
+                android:layout_alignTop="@+id/txtLabelRegistTitle"
+                android:layout_alignParentEnd="true"
+                android:onClick="back"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="아이디와 비밀번호를 입력해주세요."
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textView9"
+            android:textAlignment="center"
+            android:layout_marginBottom="48dp"
+            android:layout_marginTop="48dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="이메일"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/txtLabelRegistEmail"
+                android:textAlignment="center"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:background="@null"
+                android:textColor="#FFFFFF"
+                android:id="@+id/txtRegistEmail"
+                android:textCursorDrawable="@null">
+                <requestFocus />
+            </EditText>
+
+            <View
+                android:id="@+id/UnderLine3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/editText1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="비밀번호"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/txtLabelRegistPasswd"
+                android:textAlignment="center"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:textColor="#FFFFFF"
+                android:background="@null"
+                android:id="@+id/txtRegistPasswd"
+                android:textCursorDrawable="@null">
+                <requestFocus />
+            </EditText>
+
+            <View
+                android:id="@+id/UnderLine4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/editText1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다음 단계로"
+            android:textColor="#FFFFFF"
+            android:id="@+id/btnRegistNext"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="108dp"
+            android:background="@drawable/button_style"/>
+
+    </LinearLayout>
+</RelativeLayout>

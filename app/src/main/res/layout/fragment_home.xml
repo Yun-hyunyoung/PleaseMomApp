@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/activity_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="검색하기"
+                    android:id="@+id/btnNotiTest"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/button_style"
+                    android:elevation="10dp"
+                    android:layout_weight="0.5" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="동행 글쓰기"
+                    android:id="@+id/btnBoardWrite"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/button_style"
+                    android:elevation="10dp"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주요 국가 검색"
+                android:textSize="16dp"
+                android:id="@+id/textView5"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="125dp"
+                    android:id="@+id/imgMainSearch1"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:src="@drawable/la"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"/>
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="125dp"
+                    android:id="@+id/imgMainSearch2"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:src="@drawable/london"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"/>
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="125dp"
+                    android:id="@+id/imgMainSearch3"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:src="@drawable/tokyo"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"/>
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="125dp"
+                    android:id="@+id/imgMainSearch4"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:src="@drawable/rome"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"/>
+
+            </GridLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="최근 후기"
+                android:textSize="16dp"
+                android:id="@+id/textView6"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviewGridView"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:numColumns="3" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

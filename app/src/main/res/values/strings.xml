@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">엄마를 부탁해</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_1">홈</string>
+    <string name="tab_2">검색</string>
+    <string name="tab_3">알림</string>
+    <string name="tab_4">내정보</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">다음</string>
+    <string name="skip">건너뛰기</string>
+    <string name="start">확인</string>
+
+    <string name="slide_1_title">부모님을 해외로 초대</string>
+    <string name="slide_1_desc">학생들이 가이드를 맡아 부모님을 안전하게 해외로 초대할 수 있습니다.</string>
+
+    <string name="slide_2_title">유학생에게 경제적 도움</string>
+    <string name="slide_2_desc">비행 준비 및 비행 도중 안내와 도움을 주고 팁을 받을 수 있습니다. </string>
+
+    <string name="slide_3_title">저렴한 비용</string>
+    <string name="slide_3_desc">일반 가이더를 고용하는 것 보다 저렴하며 학생들과 상생할 수 있습니다.</string>
+
+    <string name="slide_4_title">설명은 끝!</string>
+    <string name="slide_4_desc">엄마를 부탁해와 함께 즐거운 동행 되세요!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+    <string-array name="spinnerVia">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

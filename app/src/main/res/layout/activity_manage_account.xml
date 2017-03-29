@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_background"
+    android:onClick="linearOnClick">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="인증 관리"
+        android:id="@+id/txtLabelManageAuth"
+        android:textSize="30dp"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="이메일 인증"
+            android:textSize="14dp"
+            android:id="@+id/txtLabelManageEmailAuth"
+            android:layout_weight="0.15"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="ggg"
+            android:textSize="14dp"
+            android:id="@+id/txtManageEmailAuth"
+            android:layout_weight="0.85"
+            android:textAlignment="center"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:textColor="#FFFFFF"
+            android:id="@+id/btnManageEmailAuth"
+            android:background="@drawable/button_style"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="휴대폰 인증"
+            android:textSize="14dp"
+            android:id="@+id/txtLabelManagePhoneAuth"
+            android:layout_weight="0.15"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="ggg"
+            android:textSize="14dp"
+            android:id="@+id/txtManagePhoneAuth"
+            android:layout_weight="0.85"
+            android:textAlignment="center"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:textColor="#FFFFFF"
+            android:id="@+id/btnManagePhoneAuth"
+            android:background="@drawable/button_style"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/cardview_dark_background"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+    </View>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="비밀번호 변경"
+            android:id="@+id/txtLabelManageChangePasswd"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="개인정보 보호를 위해 비밀번호를 한번 더 입력해주세요."
+            android:textSize="14dp"
+            android:id="@+id/txtAlertManageChangePasswd"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtManageChangePasswd"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:textColor="#FFFFFF"
+                android:id="@+id/btnManageChangePasswd"
+                android:background="@drawable/button_style" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/cardview_dark_background"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+    </View>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="계정 삭제 요청"
+            android:id="@+id/txtLabelDeleteMember"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="회원님의 프로필과 등록된 글, 후기 등 모든 정보가 삭제됩니다."
+            android:textSize="14dp"
+            android:id="@+id/txtAlertDeleteMember"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="계정 삭제"
+            android:textColor="#FFFFFF"
+            android:id="@+id/btnManageDeleteMember"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_style_inner"/>
+    </LinearLayout>
+
+</LinearLayout>
